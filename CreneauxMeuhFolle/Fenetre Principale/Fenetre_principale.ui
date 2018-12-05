@@ -1,0 +1,5843 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1191</width>
+    <height>825</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Calibri</family>
+    <pointsize>12</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Creneaux Meuh Folle</string>
+  </property>
+  <property name="statusTip">
+   <string>Meuh Folle 2017 - Best Meuh Folle Ever</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_9">
+    <property name="leftMargin">
+     <number>5</number>
+    </property>
+    <property name="topMargin">
+     <number>5</number>
+    </property>
+    <property name="rightMargin">
+     <number>5</number>
+    </property>
+    <property name="bottomMargin">
+     <number>5</number>
+    </property>
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <family>Cooper Black</family>
+        <pointsize>14</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="statusTip">
+       <string>Meuh Folle 2017 - Best Meuh Folle Ever</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTabBar::tab::selected{
+color : rgb(200, 200, 0);
+}
+
+QTabBar::tab:!selected{
+color: grey;
+}
+
+QTabBar::tab {
+	background : qlineargradient(spread:pad, x1:0.722, y1:1, x2:0.652, y2:0.778545, stop:0.960227 rgba(211, 211, 211, 255), stop:1 rgba(255, 255, 255, 255));
+    border-bottom-color: darkGrey;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+	border: 2px solid #C4C4C3;
+    min-width: 8ex;
+	padding: 2px;
+	padding-left : 4px;
+	padding-right : 4px
+
+}
+
+QTabWidget::pane { 
+    border: 3px solid darkGrey;
+	border-radius : 10px;
+}
+
+</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="tabShape">
+       <enum>QTabWidget::Triangular</enum>
+      </property>
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>16</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="vendredi">
+       <attribute name="title">
+        <string>Vendredi</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QComboBox" name="rechercheV">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>15</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QComboBox{
+border : 3px solid black;
+border-radius : 5px;
+background : qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 255), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));
+padding-left : 10px;
+padding-bottom: 2px
+
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+	height: 20px;
+}
+
+QComboBox::hover{
+border : 3px solid darkGreen;
+border-radius : 5px;
+background : yellow;
+padding-left : 10px;
+padding-bottom: 2px
+}
+
+QComboBox::on {
+border : 3px solid transparent;
+border-radius : 5px;
+background : yellow;
+padding-left : 10px;
+padding-bottom: 2px
+}
+
+QComboBox QAbstractItemView {
+	border: 3px solid black;
+	color: black;
+    selection-background-color: yellow;
+	selection-color: black;
+}
+
+
+</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Aucun</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="supRechercheV">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QLabel" name="NbCBeneV">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>45</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Calibri</family>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+border : 3px solid black;
+border-radius : 5px;
+padding: 3px;
+margin : 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>Aucun bénévole sélectionné</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="ResumeBenevoleV">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QHeaderView::section {
+	padding : 5px;
+	 font: medium &quot;Cooper Black&quot;;
+	 font-size: 14px;
+		 background : qlineargradient(spread:reflect, x1:0.499682, y1:0.5, x2:0.5, y2:0, stop:0.355932 rgba(255, 255, 255, 255), stop:0.903955 rgba(248, 82, 0, 73));
+}
+
+
+QTableWidget {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.363636 rgba(222, 222, 222, 164), stop:0.602273 rgba(222, 222, 222, 164)); alternate-background-color: rgb(255, 255, 160);
+	border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	 gridline-color: black;
+}
+
+QTableWidget::hover {border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;}</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="tabKeyNavigation">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::NoSelection</enum>
+            </property>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>200</number>
+            </attribute>
+            <row>
+             <property name="text">
+              <string>Voeux :</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>Remarque : </string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>Categorie 1</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Categorie 2</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Categorie 3</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Artiste Vendredi</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QPushButton" name="scrollAtTopV">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="scrollAtBottomV">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTableWidget" name="creneauVendredi">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QHeaderView::section {
+	 border : 1px  solid black;
+     border-radius: 10px;
+     padding: 0px;
+	 font: medium &quot;Cooper Black&quot;;
+	 font-size: 18px;
+	 background : qlineargradient(spread:reflect, x1:0.499682, y1:0.5, x2:0.5, y2:0, stop:0.355932 rgba(255, 255, 255, 255), stop:0.903955 rgba(248, 82, 0, 73));
+}
+QTableWidget{
+	background-color: white; alternate-background-color: rgb(255, 255, 160);
+	gridline-color :  Gray;
+}
+
+</string>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectItems</enum>
+          </property>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>09H-10H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>10H-11H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>11H-12H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>12H-13H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>13H-14H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>14H-15H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>15H-16H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>16H-17H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>17H-18H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>18H-19H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>19H-20H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>20H-21H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>21H-22H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>22H-23H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>23H-00H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>00H-01H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>01H-02H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>02H-03H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>03H-04H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>04H-05H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>05H-06H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>06H-07H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>07H-08H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>08H-09H</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="samedi">
+       <attribute name="title">
+        <string>Samedi</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <widget class="QComboBox" name="rechercheS">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Calibri</family>
+                  <pointsize>12</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QComboBox{
+border : 3px solid black;
+border-radius : 5px;
+background : qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 255), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));
+padding-left : 10px;
+padding-bottom: 2px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+	height: 20px;
+}
+
+QComboBox::hover{
+border : 3px solid darkGreen;
+border-radius : 5px;
+background : yellow;
+padding-left : 10px;
+padding-bottom: 2px
+}
+
+QComboBox::on {
+border : 3px solid transparent;
+border-radius : 5px;
+background : yellow;
+padding-left : 10px;
+padding-bottom: 2px
+}
+
+
+QComboBox QAbstractItemView {
+	border: 3px solid black;
+	color: black;
+    selection-background-color: yellow;
+	selection-color: black;
+}</string>
+                </property>
+                <property name="maxVisibleItems">
+                 <number>10</number>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Aucun</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="supRechercheS">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>30</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QLabel" name="NbCBeneS">
+              <property name="minimumSize">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>45</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Calibri</family>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="toolTip">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="accessibleName">
+               <string/>
+              </property>
+              <property name="accessibleDescription">
+               <string/>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+border : 3px solid black;
+border-radius : 5px;
+padding: 3px;
+margin : 0px;
+}</string>
+              </property>
+              <property name="text">
+               <string>Aucun bénévole sélectionné</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="ResumeBenevoleS">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QHeaderView::section {
+	padding : 5px;
+	 font: medium &quot;Cooper Black&quot;;
+	 font-size: 14px;
+		 background : qlineargradient(spread:reflect, x1:0.499682, y1:0.5, x2:0.5, y2:0, stop:0.355932 rgba(255, 255, 255, 255), stop:0.903955 rgba(248, 82, 0, 73));
+}
+
+
+QTableWidget {
+	background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0, y2:0, stop:0.363636 rgba(222, 222, 222, 164), stop:0.602273 rgba(222, 222, 222, 164)); alternate-background-color: rgb(255, 255, 160);
+	border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	 gridline-color: black;
+}
+
+QTableWidget::hover {border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;}</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::NoSelection</enum>
+            </property>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>200</number>
+            </attribute>
+            <row>
+             <property name="text">
+              <string>Voeux :</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>Remarque :</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>Categorie 1</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Categorie 2</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Categorie 3</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Artiste Samedi</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QPushButton" name="scrollAtTopS">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="scrollAtBottomS">
+              <property name="minimumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTableWidget" name="creneauSamedi">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QHeaderView::section {
+	 border : 1px  solid black;
+     border-radius: 10px;
+     padding: 0px;
+	 font: medium &quot;Cooper Black&quot;;
+	 font-size: 18px;
+	 background : qlineargradient(spread:reflect, x1:0.499682, y1:0.5, x2:0.5, y2:0, stop:0.355932 rgba(255, 255, 255, 255), stop:0.903955 rgba(248, 82, 0, 73));
+}
+QTableWidget{
+	background-color: white; alternate-background-color: rgb(255, 255, 160);
+	gridline-color :  Gray;
+	
+}
+
+</string>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>true</bool>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>09H-10H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>10H-11H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>11H-12H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>12H-13H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>13H-14H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>14H-15H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>15H-16H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>16H-17H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>17H-18H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>18H-19H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>19H-20H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>20H-21H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>21H-22H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>22H-23H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>23H-00H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>00H-01H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>01H-02H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>02H-03H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>03H-04H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>04H-05H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>05H-06H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>06H-07H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>07H-08H</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>08H-09H</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Benevoles">
+       <attribute name="title">
+        <string>Benevoles</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <item row="10" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="nbBenevoles">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Nombre de benevoles : 0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ajoutBenevole2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>350</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>500</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 2px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Ajouter un bénévole</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="supBenevole">
+            <property name="minimumSize">
+             <size>
+              <width>350</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>500</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 2px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Supprimer un bénévole</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="scrollAtBottomB">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="scrollAtTopB">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="9" column="0">
+         <widget class="QTableWidget" name="tabBenevoles">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QHeaderView::section {
+	 border : 1px  solid black;
+     padding: 0px;
+	 font: medium &quot;Cooper Black&quot;;
+	 font-size: 16px;
+	 background : rgba(221, 103, 0,40);
+}
+
+QTableWidget{
+background-color: white; alternate-background-color: rgb(255, 255, 160);
+selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 green, stop: 0.5 yellow , stop: 1 red); 
+selection-color : black;
+gridline-color : Gray}
+
+</string>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="rowCount">
+           <number>99</number>
+          </property>
+          <property name="columnCount">
+           <number>11</number>
+          </property>
+          <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderDefaultSectionSize">
+           <number>30</number>
+          </attribute>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <column>
+           <property name="text">
+            <string>Nom Prenom</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Voeux 1</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Voeux 2</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Voeux 3</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Artiste Vendredi</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Artistes Samedi</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Remarques</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Creneaux Vendredi</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Creneaux Samedi</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Nb Creneaux Vendredi</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Nb Creneaux Samedi</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="supRechercheBene">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="rechercheBenevoles">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+     border: 3px solid black;
+     border-radius: 5px;
+     padding: 0 8px;
+     selection-background-color: black ;
+ }
+QLineEdit::hover {
+     border: 3px solid  qlineargradient(spread:pad, x1:0, y1:0, x2:0.0511364, y2:0.034, stop:0 rgba(255, 255, 255, 255), stop:0.965909 rgba(0, 156, 0, 167));
+     border-radius: 5px;
+     padding: 0 8px;
+     selection-background-color: black ;
+ }
+
+QLineEdit::focus {
+     border: 3px solid  qlineargradient(spread:pad, x1:0, y1:0, x2:0.0511364, y2:0.034, stop:0 rgba(255, 255, 255, 255), stop:0.965909 rgba(0, 156, 0, 167));
+     border-radius: 5px;
+     padding: 0 8px;
+     selection-background-color: black ;
+ }</string>
+            </property>
+            <property name="placeholderText">
+             <string>Rechercher un bénévole par nom ou prénom</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioFiltreNom">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+
+QRadioButton::indicator::unchecked{
+	background-color : white;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator::unchecked::hover{
+	background-color :yellow;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator:unchecked:pressed{
+	background-color : yellow;
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Nom prénom</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioFiltreCat">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+
+QRadioButton::indicator::unchecked{
+	background-color : white;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator::unchecked::hover{
+	background-color :yellow;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator:unchecked:pressed{
+	background-color : yellow;
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Categorie</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioFiltreArtiste">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+
+QRadioButton::indicator::unchecked{
+	background-color : white;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator::unchecked::hover{
+	background-color :yellow;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator:unchecked:pressed{
+	background-color : yellow;
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Artiste</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Creneaux">
+       <attribute name="title">
+        <string>Creneaux</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <item row="2" column="0">
+         <widget class="QTableWidget" name="tabCreneaux">
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>11</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QHeaderView::section {
+	 border : 1px  solid black;
+     padding: 0px;
+	 font: medium &quot;Cooper Black&quot;;
+	 font-size: 18px;
+	 background : rgba(221, 103, 0,40);
+}
+
+QTableWidget{
+background-color: white; alternate-background-color: rgb(255, 255, 160);
+selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 green, stop: 0.5 yellow , stop: 1 red); 
+selection-color : black;
+gridline-color : Gray}
+
+</string>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>true</bool>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="sortingEnabled">
+           <bool>false</bool>
+          </property>
+          <property name="rowCount">
+           <number>200</number>
+          </property>
+          <property name="columnCount">
+           <number>6</number>
+          </property>
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>182</number>
+          </attribute>
+          <attribute name="horizontalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+          <attribute name="verticalHeaderCascadingSectionResizes">
+           <bool>false</bool>
+          </attribute>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <row/>
+          <column>
+           <property name="text">
+            <string>Nom</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Plage Horaire</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Duree</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Categorie</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Benevoles Vendredi</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Benevoles Samedi</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="nbCreneaux">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Nombre de creneaux : 0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ajoutCreneau2">
+            <property name="minimumSize">
+             <size>
+              <width>350</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>500</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 2px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Ajouter un creneau</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="supCreneau">
+            <property name="minimumSize">
+             <size>
+              <width>350</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>500</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 2px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Supprimer un creneau</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="scrollAtBottomC">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="scrollAtTopC">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>5</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="supRechercheCre">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="rechercheCreneaux">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+     border: 3px solid black;
+     border-radius: 5px;
+     padding: 0 8px;
+     selection-background-color: black ;
+ }
+QLineEdit::hover {
+     border: 3px solid  qlineargradient(spread:pad, x1:0, y1:0, x2:0.0511364, y2:0.034, stop:0 rgba(255, 255, 255, 255), stop:0.965909 rgba(0, 156, 0, 167));
+     border-radius: 5px;
+     padding: 0 8px;
+     selection-background-color: black ;
+ }
+
+QLineEdit::focus {
+     border: 3px solid  qlineargradient(spread:pad, x1:0, y1:0, x2:0.0511364, y2:0.034, stop:0 rgba(255, 255, 255, 255), stop:0.965909 rgba(0, 156, 0, 167));
+     border-radius: 5px;
+     padding: 0 8px;
+     selection-background-color: black ;
+ }</string>
+            </property>
+            <property name="placeholderText">
+             <string>Rechercher un créneau par nom</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioCreFiltreNom">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+
+QRadioButton::indicator::unchecked{
+	background-color : white;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator::unchecked::hover{
+	background-color :yellow;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator:unchecked:pressed{
+	background-color : yellow;
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Nom</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioCreFiltreCat">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+
+QRadioButton::indicator::unchecked{
+	background-color : white;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator::unchecked::hover{
+	background-color :yellow;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator:unchecked:pressed{
+	background-color : yellow;
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Categorie</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Outils">
+       <attribute name="title">
+        <string>Outils</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="CategorieCreneaux_LAYOUT" stretch="0,1,0,0,0">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Catégorie de Créneaux</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listCatCre">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="statusTip">
+             <string>Les catégories cochées apparaitront dans les tableaux Vendredi et Samedi</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="categorieSup">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>Ajouter une nouvelle categorie</string>
+            </property>
+            <property name="statusTip">
+             <string>Entrer ici une nouvelle catégorie de créneau</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+     border: 3px solid black;
+     border-radius: 5px;
+     padding: 0 8px;
+     selection-background-color: black ;
+ }
+QLineEdit::hover {
+     border: 3px solid  qlineargradient(spread:pad, x1:0, y1:0, x2:0.0511364, y2:0.034, stop:0 rgba(255, 255, 255, 255), stop:0.965909 rgba(0, 156, 0, 167));
+     border-radius: 5px;
+     padding: 0 8px;
+     selection-background-color: black ;
+ }
+
+QLineEdit::focus {
+     border: 3px solid  qlineargradient(spread:pad, x1:0, y1:0, x2:0.0511364, y2:0.034, stop:0 rgba(255, 255, 255, 255), stop:0.965909 rgba(0, 156, 0, 167));
+     border-radius: 5px;
+     padding: 0 8px;
+     selection-background-color: black ;
+ }</string>
+            </property>
+            <property name="inputMask">
+             <string/>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>Nouvelle catégorie</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ajoutCategorie">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="statusTip">
+             <string>Valider l'ajout (Touche entrée)</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Ajouter catégorie</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="supCategorie">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="statusTip">
+             <string>Supprimer la catégorie séléctionnée</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Supprimer catégorie</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>Horaires</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listHoraire">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>120</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="statusTip">
+             <string>Les horaires cochés apparaitront dans les tableaux Vendredi et Samedi</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustIgnored</enum>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="sortingEnabled">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="2">
+         <layout class="QVBoxLayout" name="Outils_LAYOUT">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <item>
+             <widget class="QLabel" name="moyenne">
+              <property name="font">
+               <font>
+                <family>Calibri</family>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="statusTip">
+               <string>Nombre de d'heure moyen par jour par bénévole</string>
+              </property>
+              <property name="text">
+               <string>Moyenne :</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_6">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="font">
+               <font>
+                <family>Calibri</family>
+                <pointsize>14</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Nombre de créneaux par bénévole :</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="quantiteCreneau">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Cooper Black</family>
+                <pointsize>16</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="statusTip">
+               <string>Choix du nombre d'heure maximum par jour par bénévole</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QComboBox{
+border : 3px solid black;
+border-radius : 5px;
+background : qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 255), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));
+padding-left : 10px;
+padding-bottom: 2px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+	height: 20px;
+
+}
+
+QComboBox::hover{
+border : 3px solid darkGreen;
+border-radius : 5px;
+background : yellow;
+padding-left : 10px;
+padding-bottom: 2px
+}
+
+QComboBox::on {
+border : 3px solid transparent;
+border-radius : 5px;
+background : yellow;
+padding-left : 10px;
+padding-bottom: 2px
+}
+
+QComboBox QAbstractItemView {
+	border: 3px solid black;
+	color: black;
+    selection-background-color: yellow;
+	selection-color: black;
+}
+
+
+</string>
+              </property>
+              <property name="currentIndex">
+               <number>3</number>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QComboBox::AdjustToContents</enum>
+              </property>
+              <item>
+               <property name="text">
+                <string>1</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>9</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>10</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QPushButton" name="ajoutBenevole">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Cooper Black</family>
+                <pointsize>14</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="statusTip">
+               <string>Ajouter un nouveau bénévole</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+              </property>
+              <property name="text">
+               <string>Ajouter Bénévole</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="ajoutCreneau">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>40</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Cooper Black</family>
+                <pointsize>14</pointsize>
+                <weight>50</weight>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="statusTip">
+               <string>Ajouter un nouveau créneau</string>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+              </property>
+              <property name="text">
+               <string>Ajouter Créneau</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="triBenevoles">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="statusTip">
+             <string>Option de tri du tableau Bénévoles</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+}
+QGroupBox::hover{
+	 border: 3px solid darkgreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QGroupBox::title{
+	background-color: transparent;
+	subcontrol-position: top-center;
+	subcontrol-origin : margin;
+}
+
+</string>
+            </property>
+            <property name="title">
+             <string>Tri du tableau bénévoles par :</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_23">
+             <item row="4" column="0">
+              <widget class="QRadioButton" name="radioTriSMax">
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+
+QRadioButton::indicator::unchecked{
+	background-color : white;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator::unchecked::hover{
+	background-color :yellow;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator:unchecked:pressed{
+	background-color : yellow;
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Nombre de créneaux du Samedi (10 --&gt; 0)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QRadioButton" name="radioTriNom">
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+
+QRadioButton::indicator::unchecked{
+	background-color : white;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator::unchecked::hover{
+	background-color :yellow;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator:unchecked:pressed{
+	background-color : yellow;
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Nom Prénom</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QRadioButton" name="radioTriSMin">
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+
+QRadioButton::indicator::unchecked{
+	background-color : white;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator::unchecked::hover{
+	background-color :yellow;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator:unchecked:pressed{
+	background-color : yellow;
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Nombre de créneaux du Samedi (0 --&gt; 10)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QRadioButton" name="radioTriVMin">
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+
+QRadioButton::indicator::unchecked{
+	background-color : white;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator::unchecked::hover{
+	background-color :yellow;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator:unchecked:pressed{
+	background-color : yellow;
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Nombre de créneaux du Vendredi (0 --&gt; 10)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QRadioButton" name="radioTriVMax">
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+
+QRadioButton::indicator::unchecked{
+	background-color : white;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator::unchecked::hover{
+	background-color :yellow;
+	border-radius : 8px;
+	border : 2px solid black;	
+}
+
+QRadioButton::indicator:unchecked:pressed{
+	background-color : yellow;
+	border-radius : 9px;
+	border : 3px solid black;	
+}
+</string>
+               </property>
+               <property name="text">
+                <string>Nombre de créneaux du Vendredi (10 --&gt; 0)</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <spacer name="verticalSpacer_2">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Minimum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>15</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="respectVoeux">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>12</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="statusTip">
+             <string>Respect ou non des choix de catégorie de créneaux et/ou d'artistes</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QGroupBox{
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+}
+QGroupBox::hover{
+	 border: 3px solid darkgreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QGroupBox::title{
+	background-color: transparent;
+	subcontrol-position: top-center;
+	subcontrol-origin : margin;
+}</string>
+            </property>
+            <property name="title">
+             <string>Permet d'outrepasser les demandes des bénévoles</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeType">
+                <enum>QSizePolicy::Minimum</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>15</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="voeuxCreneaux">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QCheckBox::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QCheckBox::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}
+
+QCheckBox::indicator::unchecked::hover{
+	background-color : yellow;
+	border : 2px solid black;	
+}
+
+QCheckBox::indicator:unchecked:pressed{
+	background-color : yellow;
+	border : 3px solid black;	
+}
+
+
+</string>
+               </property>
+               <property name="text">
+                <string>Respecter les voeux de créneaux</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="voeuxArtistes">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Calibri</family>
+                 <pointsize>12</pointsize>
+                 <weight>50</weight>
+                 <bold>false</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QCheckBox::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QCheckBox::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}
+
+QCheckBox::indicator::unchecked::hover{
+	background-color : yellow;
+	border : 2px solid black;	
+}
+
+QCheckBox::indicator:unchecked:pressed{
+	background-color : yellow;
+	border : 3px solid black;	
+}
+
+
+</string>
+               </property>
+               <property name="text">
+                <string>Respecter les voeux d'artistes</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="horaireArtistes">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>706</width>
+              <height>160</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>12</pointsize>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="cursor" stdset="0">
+             <cursorShape>IBeamCursor</cursorShape>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::StrongFocus</enum>
+            </property>
+            <property name="statusTip">
+             <string>Remplir par la programmation (Eviter les accents, Respecter la même casse que le formulaire)</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QHeaderView::section {
+	 border : 1px  solid black;
+     padding: 0px;
+	 font: medium &quot;Cooper Black&quot;;
+	 font-size: 18px;
+	 background : rgba(221, 103, 0,40);
+}
+
+QTableWidget{
+background-color: white; alternate-background-color: rgb(255, 255, 160);
+selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 green, stop: 0.5 yellow , stop: 1 red); 
+selection-color : black;
+gridline-color : Gray}
+
+
+
+QTableWidget::hover {
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;}
+
+QHeaderView::section {
+	padding : 5px;
+	font-size: 18px;
+	font : medium &quot;Cooper Black&quot;;
+	background : qlineargradient(spread:reflect, x1:0.499682, y1:0.5, x2:0.5, y2:0, stop:0.355932 rgba(255, 255, 255, 255), stop:0.903955 rgba(248, 82, 0, 73));
+}
+
+</string>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAlwaysOff</enum>
+            </property>
+            <property name="sizeAdjustPolicy">
+             <enum>QAbstractScrollArea::AdjustToContents</enum>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+            <property name="selectionMode">
+             <enum>QAbstractItemView::NoSelection</enum>
+            </property>
+            <property name="sortingEnabled">
+             <bool>false</bool>
+            </property>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>330</number>
+            </attribute>
+            <attribute name="verticalHeaderDefaultSectionSize">
+             <number>35</number>
+            </attribute>
+            <row>
+             <property name="text">
+              <string>19h-21h</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Cooper Black</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>21h-23h</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Cooper Black</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>23h-01h</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Cooper Black</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>01h-03h</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Cooper Black</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>Artistes du Vendredi</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Cooper Black</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Artistes du Samedi</string>
+             </property>
+             <property name="font">
+              <font>
+               <family>Cooper Black</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </column>
+            <item row="0" column="0">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item row="0" column="1">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item row="1" column="0">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item row="1" column="1">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item row="2" column="0">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item row="2" column="1">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item row="3" column="0">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item row="3" column="1">
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QProgressBar" name="progressBarV">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="statusTip">
+             <string>Avancement du Vendredi</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QProgressBar {
+	border: 3px solid grey;
+	border-radius: 7px;
+}
+
+QProgressBar::chunk{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.0511364, y2:0.034, stop:0 rgba(255, 255, 255, 255), stop:0.965909 rgba(0, 156, 0, 167));
+	margin : 0.5px;
+	width : 12px
+}</string>
+            </property>
+            <property name="value">
+             <number>50</number>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="textVisible">
+             <bool>true</bool>
+            </property>
+            <property name="invertedAppearance">
+             <bool>false</bool>
+            </property>
+            <property name="textDirection">
+             <enum>QProgressBar::TopToBottom</enum>
+            </property>
+            <property name="format">
+             <string>%p%</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QProgressBar" name="progressBarS">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="statusTip">
+             <string>Avancement du Samedi</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QProgressBar {
+	border: 3px solid grey;
+	border-radius: 7px;
+}
+
+QProgressBar::chunk{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:1 rgba(255, 255, 0, 138));
+	margin : 0.5px;
+	width : 12px
+}</string>
+            </property>
+            <property name="value">
+             <number>50</number>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QProgressBar" name="progressBarT">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="statusTip">
+             <string>Avancement Total</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QProgressBar {
+	border: 3px solid grey;
+	border-radius: 7px;
+}
+
+QProgressBar::chunk{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 0, 0, 66));
+	margin : 0.5px;
+	width : 12px
+}</string>
+            </property>
+            <property name="value">
+             <number>50</number>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ResumeVendredi">
+       <property name="statusTip">
+        <string>Les Bénévoles apparaissent ici en résumé par nombre de Créneaux. Les bénévoles décochés n'apparaitront pas dans les choix du tableau Vendredi</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <attribute name="title">
+        <string>Resume Vendredi</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Aucun Créneau</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list0CreneauV">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="allVen0">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout sélectionner</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="noneVen0">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout désélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>1 Créneau</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list1CreneauV">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="allVen1">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout sélectionner</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="noneVen1">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout désélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="2">
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>2 Créneaux</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list2CreneauV">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="allVen2">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout sélectionner</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="noneVen2">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout désélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="3">
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>3 Créneaux</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list3CreneauV">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="allVen3">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout sélectionner</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="noneVen3">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout désélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="4">
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>4 Créneaux</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list4CreneauV">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="allVen4">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout sélectionner</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="noneVen4">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout désélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="5">
+         <layout class="QVBoxLayout" name="verticalLayout_12">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>5 Créneaux et plus</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list5CreneauV">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="allVen5">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout sélectionner</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="noneVen5">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout désélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ResumeSamedi">
+       <property name="statusTip">
+        <string>Les Bénévoles apparaissent ici en résumé par nombre de Créneaux. Les bénévoles décochés n'apparaitront pas dans les choix du tableau Samedi</string>
+       </property>
+       <attribute name="title">
+        <string>Resume Samedi</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_22">
+        <property name="leftMargin">
+         <number>5</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <property name="rightMargin">
+         <number>5</number>
+        </property>
+        <property name="bottomMargin">
+         <number>5</number>
+        </property>
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_14">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>Aucun Créneau</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list0CreneauS">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="allSam0">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout sélectionner</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="noneSam0">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout désélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="5">
+         <layout class="QVBoxLayout" name="verticalLayout_18">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_17">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>5 Créneaux et plus</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list5CreneauS">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="allSam5">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout sélectionner</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="noneSam5">
+            <property name="minimumSize">
+             <size>
+              <width>160</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout désélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="3">
+         <layout class="QVBoxLayout" name="verticalLayout_16">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>3 Créneaux</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list3CreneauS">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="allSam3">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout sélectionner</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="noneSam3">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout désélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="2">
+         <layout class="QVBoxLayout" name="verticalLayout_15">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>2 Créneaux</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list2CreneauS">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="allSam2">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout sélectionner</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="noneSam2">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout désélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_13">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_12">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>1 Créneau</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list1CreneauS">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="allSam1">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout sélectionner</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="noneSam1">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout désélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="4">
+         <layout class="QVBoxLayout" name="verticalLayout_17">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_16">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>4 Créneaux</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListWidget" name="list4CreneauS">
+            <property name="font">
+             <font>
+              <family>Calibri</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+	selection-background : qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	selection-color : black
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}
+
+QListWidget::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QListWidget::indicator::checked{
+	background-color : qlineargradient(spread:reflect, x1:0.1, y1:0.1, x2:0.5, y2:0.5, stop:0.801136 rgba(255, 255, 0, 255), stop:1 rgba(0, 0, 0, 255));
+	border : 3px solid black;	
+}
+
+QListWidget::indicator::unchecked{
+	background-color : white;
+	border : 2px solid black;	
+}</string>
+            </property>
+            <property name="alternatingRowColors">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="allSam4">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout sélectionner</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="noneSam4">
+            <property name="font">
+             <font>
+              <family>Cooper Black</family>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border: 3px solid black;
+     border-radius: 10px;       
+    padding-top: 6px;
+	padding-bottom: 6px;
+    padding-left: 3px;
+	padding-right: 3px;
+	
+
+}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+            </property>
+            <property name="text">
+             <string>Tout désélectionner</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1191</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="font">
+     <font>
+      <family>Cooper Black</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionEnregistrer"/>
+    <addaction name="actionReinitialiser"/>
+    <addaction name="actionDerniereSvg"/>
+    <addaction name="separator"/>
+    <addaction name="actionImport"/>
+    <addaction name="actionExport"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuCalcul_Auto">
+    <property name="font">
+     <font>
+      <family>Cooper Black</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Calcul Auto</string>
+    </property>
+    <addaction name="actionCalculAuto"/>
+   </widget>
+   <widget class="QMenu" name="menuAffichage">
+    <property name="font">
+     <font>
+      <family>Cooper Black</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Affichage</string>
+    </property>
+    <addaction name="actionZoom"/>
+    <addaction name="actionDezoomer"/>
+    <addaction name="separator"/>
+    <addaction name="actionResetPolice"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuCalcul_Auto"/>
+   <addaction name="menuAffichage"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+    </font>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </widget>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionImport">
+   <property name="text">
+    <string>Import</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionEnSavoirPlus">
+   <property name="text">
+    <string>En savoir plus</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="actionEnregistrer">
+   <property name="text">
+    <string>Enregistrer</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>12</pointsize>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionExport">
+   <property name="text">
+    <string>Export</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionCalculAuto">
+   <property name="text">
+    <string>Calcul Auto</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="actionReinitialiser">
+   <property name="text">
+    <string>Reinitialiser</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Alt+Z</string>
+   </property>
+  </action>
+  <action name="actionZoom">
+   <property name="text">
+    <string>Agrandir Police</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl++</string>
+   </property>
+  </action>
+  <action name="actionDezoomer">
+   <property name="text">
+    <string>Réduire Police</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+  <action name="actionResetPolice">
+   <property name="text">
+    <string>Police par défaut</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cooper Black</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+=</string>
+   </property>
+  </action>
+  <action name="actionDerniereSvg">
+   <property name="text">
+    <string>Derniere sauvegarde</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>scrollAtTopV</sender>
+   <signal>clicked()</signal>
+   <receiver>creneauVendredi</receiver>
+   <slot>scrollToTop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1149</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1020</x>
+     <y>188</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scrollAtBottomB</sender>
+   <signal>clicked()</signal>
+   <receiver>tabBenevoles</receiver>
+   <slot>scrollToBottom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1122</x>
+     <y>777</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>706</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scrollAtTopS</sender>
+   <signal>clicked()</signal>
+   <receiver>creneauSamedi</receiver>
+   <slot>scrollToTop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1155</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>988</x>
+     <y>303</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scrollAtTopB</sender>
+   <signal>clicked()</signal>
+   <receiver>tabBenevoles</receiver>
+   <slot>scrollToTop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1168</x>
+     <y>777</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>877</x>
+     <y>724</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scrollAtBottomS</sender>
+   <signal>clicked()</signal>
+   <receiver>creneauSamedi</receiver>
+   <slot>scrollToBottom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1149</x>
+     <y>152</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1082</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>categorieSup</sender>
+   <signal>returnPressed()</signal>
+   <receiver>ajoutCategorie</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>687</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>732</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scrollAtTopC</sender>
+   <signal>clicked()</signal>
+   <receiver>tabCreneaux</receiver>
+   <slot>scrollToTop()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1168</x>
+     <y>777</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>877</x>
+     <y>724</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>supRechercheBene</sender>
+   <signal>clicked()</signal>
+   <receiver>rechercheBenevoles</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>39</x>
+     <y>109</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>67</x>
+     <y>99</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>supRechercheCre</sender>
+   <signal>clicked()</signal>
+   <receiver>rechercheCreneaux</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>38</x>
+     <y>105</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>82</x>
+     <y>106</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scrollAtBottomV</sender>
+   <signal>clicked()</signal>
+   <receiver>creneauVendredi</receiver>
+   <slot>scrollToBottom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1167</x>
+     <y>168</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1089</x>
+     <y>353</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>scrollAtBottomC</sender>
+   <signal>clicked()</signal>
+   <receiver>tabCreneaux</receiver>
+   <slot>scrollToBottom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1122</x>
+     <y>777</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>810</x>
+     <y>613</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

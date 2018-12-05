@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>770</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Choisissez un benevole</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QPushButton" name="annuler">
+     <property name="font">
+      <font>
+       <family>Cooper Black</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border-width: 2px;
+     border-radius: 10px;   
+     border-color: black;    
+    min-width: 10em;    
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+     </property>
+     <property name="text">
+      <string>Annuler</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QListWidget" name="listBenevoles">
+     <property name="font">
+      <font>
+       <family>Calibri</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget{background-color: white; alternate-background-color: rgb(255, 255, 160);
+	 border: 3px solid gray;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::hover{
+	 border: 3px solid darkGreen;
+     border-radius: 10px;
+     padding: 0px;
+}
+
+QListWidget::item::selected{
+	background : transparent;
+	color: black
+}
+
+QListWidget::item::hover{
+	background :qlineargradient(spread:pad, x1:0.5, y1:0, x2:0.5, y2:1, stop:0 rgba(0, 0, 0, 255), stop:0.039548 rgba(0, 156, 0, 80), stop:0.966102 rgba(0, 156, 0, 80), stop:1 rgba(0, 0, 0, 255));
+	color: black;
+	border : 1px solid black;
+	border-radius: 4px;
+}</string>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+     </property>
+     <property name="tabKeyNavigation">
+      <bool>false</bool>
+     </property>
+     <property name="showDropIndicator" stdset="0">
+      <bool>true</bool>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="viewMode">
+      <enum>QListView::ListMode</enum>
+     </property>
+     <property name="selectionRectVisible">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="supprimer">
+     <property name="font">
+      <font>
+       <family>Cooper Black</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border-width: 2px;
+     border-radius: 10px;   
+     border-color: black;    
+    min-width: 10em;    
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+     </property>
+     <property name="text">
+      <string>Vider la cellule</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

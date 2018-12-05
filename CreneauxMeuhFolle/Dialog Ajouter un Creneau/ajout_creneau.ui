@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>318</width>
+    <height>292</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ajouter un creneau</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QPushButton" name="ok">
+       <property name="minimumSize">
+        <size>
+         <width>146</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cooper Black</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border-width: 2px;
+     border-radius: 10px;   
+     border-color: black;    
+    min-width: 10em;    
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }
+</string>
+       </property>
+       <property name="text">
+        <string>Ok</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="annuler">
+       <property name="minimumSize">
+        <size>
+         <width>146</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Cooper Black</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{   
+	 background-color: qlineargradient(spread:pad, x1:0.738227, y1:0.278, x2:0, y2:1, stop:0 rgba(255, 255, 255, 0), stop:0.710227 rgba(255, 255, 0, 255));   
+	 border-style: outset;    
+	 border-width: 2px;
+     border-radius: 10px;   
+     border-color: black;    
+    min-width: 10em;    
+    padding: 6px;}
+
+QPushButton::hover{   background-color: yellow;    border-style: inset;  border-color: darkGreen }
+QPushButton::pressed {    background-color: yellow;    border-style: inset; border-color:beige }</string>
+       </property>
+       <property name="text">
+        <string>Annuler</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <family>Cooper Black</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Duree</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="duree">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+border : 3px solid black;
+border-radius : 5px;
+background : qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 255), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));
+padding-left : 10px;
+padding-bottom: 2px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+	height: 20px;
+
+}
+
+QComboBox::hover{
+border : 3px solid darkGreen;
+border-radius : 5px;
+background : yellow;
+padding-left : 10px;
+padding-bottom: 2px
+}
+
+QComboBox::on {
+border : 3px solid transparent;
+border-radius : 5px;
+background : yellow;
+padding-left : 10px;
+padding-bottom: 2px
+}
+
+QComboBox QAbstractItemView {
+	border: 3px solid black;
+	color: black;
+    selection-background-color: yellow;
+	selection-color: black;
+}
+
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="font">
+        <font>
+         <family>Cooper Black</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Plage Horaire</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="plageHor">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+border : 3px solid black;
+border-radius : 5px;
+background : qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 255), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));
+padding-left : 10px;
+padding-bottom: 2px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+	height: 20px;
+
+}
+
+QComboBox::hover{
+border : 3px solid darkGreen;
+border-radius : 5px;
+background : yellow;
+padding-left : 10px;
+padding-bottom: 2px
+}
+
+QComboBox::on {
+border : 3px solid transparent;
+border-radius : 5px;
+background : yellow;
+padding-left : 10px;
+padding-bottom: 2px
+}
+
+QComboBox QAbstractItemView {
+	border: 3px solid black;
+	color: black;
+    selection-background-color: yellow;
+	selection-color: black;
+}
+
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <property name="maxVisibleItems">
+        <number>24</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <family>Cooper Black</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Categorie</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="categorie">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox{
+border : 3px solid black;
+border-radius : 5px;
+background : qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 255), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));
+padding-left : 10px;
+padding-bottom: 2px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+	height: 20px;
+
+}
+
+QComboBox::hover{
+border : 3px solid darkGreen;
+border-radius : 5px;
+background : yellow;
+padding-left : 10px;
+padding-bottom: 2px
+}
+
+QComboBox::on {
+border : 3px solid transparent;
+border-radius : 5px;
+background : yellow;
+padding-left : 10px;
+padding-bottom: 2px
+}
+
+QComboBox QAbstractItemView {
+	border: 3px solid black;
+	color: black;
+    selection-background-color: yellow;
+	selection-color: black;
+}
+
+
+</string>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>Cooper Black</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Nom</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="nom">
+       <property name="font">
+        <font>
+         <family>Calibri</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+     border: 3px solid black;
+     border-radius: 5px;
+     padding: 0 8px;
+     selection-background-color: black ;
+ }
+QLineEdit::hover {
+     border: 3px solid  qlineargradient(spread:pad, x1:0, y1:0, x2:0.0511364, y2:0.034, stop:0 rgba(255, 255, 255, 255), stop:0.965909 rgba(0, 156, 0, 167));
+     border-radius: 5px;
+     padding: 0 8px;
+     selection-background-color: black ;
+ }
+
+QLineEdit::focus {
+     border: 3px solid  qlineargradient(spread:pad, x1:0, y1:0, x2:0.0511364, y2:0.034, stop:0 rgba(255, 255, 255, 255), stop:0.965909 rgba(0, 156, 0, 167));
+     border-radius: 5px;
+     padding: 0 8px;
+     selection-background-color: black ;
+ }</string>
+       </property>
+       <property name="placeholderText">
+        <string>Parking 1</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
