@@ -26,6 +26,7 @@ from benevoles import Benevoles
 from Jour import Jour
 from resume import Resume
 
+from functools import partial
 
 import fenetre_principale_UI  # import du fichier UImainwindow.py généré par pyuic5 (Qt Creator)
 import choix_benevole_DI
@@ -49,8 +50,6 @@ HORAIRE = ["09H-10H", "10H-11H", "11H-12H", "12H-13H", "13H-14H", "14H-15H", "15
            "17H-18H", "18H-19H", "19H-20H", "20H-21H", "21H-22H", "22H-23H", "23H-00H", "00H-01H", "01H-02H", "02H-03H",
            "03H-04H", "04H-05H", "05H-06H", "06H-07H", "07H-08H", "08H-09H"]
 
-
-
 def remplir_tab_resume(tableau,label,benevole,jour):
     item = M.item_normal_non_editable(benevole.cre1)
     tableau.setItem(0,0,item)
@@ -71,6 +70,17 @@ def remplir_tab_resume(tableau,label,benevole,jour):
     elif jour == "S" :
         label.setText(benevole.nom + " : {}h de creneau".format(len(benevole.creneaux_samedi)))
 
+def set_valeur_combobox(index, tab):
+        MyWindow.ETAT_SVG = False
+        row = tab.currentRow()
+        column = tab.currentColumn()
+        item = M.item_normal(index)
+        tab.removeCellWidget(row, column)
+        tab.setItem(row, column, item)
+
+def supprimer_combobox(tab, previousRow, previousColumn):
+    MyWindow.ETAT_SVG = False
+    tab.removeCellWidget(previousRow, previousColumn)
 
 
 class MyWindow(QtWidgets.QMainWindow):
@@ -79,6 +89,7 @@ class MyWindow(QtWidgets.QMainWindow):
     """
 
     ETAT_SVG = True
+    LISTE_OBJET_POLICE = []
     horaire = [] #Variable de class indiquant la plage horaire de  24h (définit plus bas à modifier)
     etatHor = [] #↑vairble de class indiquant les horaires a afficher
     quantiteCreneau = 1 #nombre de creneau par benevole par jour ; 1creneau = 1H
@@ -92,6 +103,7 @@ class MyWindow(QtWidgets.QMainWindow):
     dictResumeSam = {}
 
     def __init__(self, parent=None):#constructeur
+        MyWindow.LISTE_OBJET_POLICE = []
         QtWidgets.QMainWindow.__init__(self, parent)# mauvaise méthode super(MyWindow, self).__init__(parent)
 
         self.move(100,100) #placement de la fenetre (à vérifier)
@@ -188,9 +200,9 @@ class MyWindow(QtWidgets.QMainWindow):
     def home(self):
         ############################## MENUBAR ######################################################################
                 ############### Affichage #################
-        self.ui.actionZoom.triggered.connect(self.zoom)
-        self.ui.actionDezoomer.triggered.connect(self.dezoom)
-        self.ui.actionResetPolice.triggered.connect(self.reset_police)
+        self.ui.actionZoom.triggered.connect(partial(self.action_zoom, 1))
+        self.ui.actionDezoomer.triggered.connect(partial(self.action_zoom, -1))
+        self.ui.actionResetPolice.triggered.connect(partial(self.action_zoom, 0))
 #        self.ui.actionDerniereSvg.triggered.connect(self.charger_derniere_version)
         self.ui.actionQuitter.triggered.connect(self.closeEvent)        # Fichier-->Quitter "ctrl+Q"
         self.ui.actionEnregistrer.triggered.connect(self.save)        # Fichier-->Enregistrer "ctrl+S"
@@ -413,86 +425,24 @@ class MyWindow(QtWidgets.QMainWindow):
                 tab.currentCellChanged[int, int, int, int].connect(self.supprimer_combobox_resume)
                 tab.currentCellChanged[int, int, int, int].connect(loop.exit)
                 loop.exec_()
+    
 
-
-
-    def supprimer_combobox_resume(self,row, column, previousRow, previousColumn):
-        MyWindow.ETAT_SVG = False
-        tab_resume = [self.ui.ResumeBenevoleV, self.ui.ResumeBenevoleS]
-        onglet = self.ui.tabWidget.currentIndex()
-        tab = tab_resume[onglet]
-        tab.removeCellWidget(previousRow,previousColumn)
-
-    def set_valeur_combobox_resume(self, index):
-        MyWindow.ETAT_SVG = False
-        self.ui.tabBenevoles.blockSignals(True)
-        tab_resume = [self.ui.ResumeBenevoleV, self.ui.ResumeBenevoleS]
-        onglet = self.ui.tabWidget.currentIndex()
-        tab = tab_resume[onglet]
-        column = tab.currentColumn()
-        row = tab.currentRow()
-        item = M.item_normal(index)
-        tab.removeCellWidget(row, column)
-        tab.setItem(row, column, item)
-        cle = Benevoles.attribut[column + 1]
-        if onglet == 1 and column == 3:
-            cle = Benevoles.attribut[column + 2]
-        label_resume = [self.ui.NbCBeneV,self.ui.NbCBeneS]
-        label_resume = label_resume[onglet]
-        nom_benevole = label_resume.text().split(" : ")[0]
-        for benevole in Benevoles.listBenevoles:
-            if benevole.nom == nom_benevole:
-                #permet d'appeler l'attribut modifie, celui ci est reférencé dans un objet dict pour chaque creneau
-                benevole.__dict__[cle] = index
-                Benevoles.remplir_tab_benevoles(self.ui.tabBenevoles,MyWindow.quantiteCreneau)
-                break
-        self.ui.tabBenevoles.blockSignals(False)
-
-    def zoom(self):
-        taille_police = self.ui.creneauVendredi.fontInfo().pointSize()
-        self.ui.creneauVendredi.setFont(QtGui.QFont("Calibri", taille_police+1))
-        self.ui.creneauSamedi.setFont(QtGui.QFont("Calibri", taille_police+1))
-        self.ui.tabBenevoles.setFont(QtGui.QFont("Calibri", taille_police+1))
-        self.ui.listCatCre.setFont(QtGui.QFont("Calibri", taille_police+1))
-        self.ui.listHoraire.setFont(QtGui.QFont("Calibri", taille_police+1))
-        self.ui.tabCreneaux.setFont(QtGui.QFont("Calibri", taille_police+1))
+    def action_zoom(self, n):
+        print(n)
+        if n == 0:
+            taille_police = DEFAULT_POLICE_SIZE
+        else:
+            taille_police = self.ui.creneauVendredi.fontInfo().pointSize()
+        self.ui.creneauVendredi.setFont(QtGui.QFont("Calibri", taille_police + n))
+        self.ui.creneauSamedi.setFont(QtGui.QFont("Calibri", taille_police + n))
+        self.ui.tabBenevoles.setFont(QtGui.QFont("Calibri", taille_police + n))
+        self.ui.listCatCre.setFont(QtGui.QFont("Calibri", taille_police + n))
+        self.ui.listHoraire.setFont(QtGui.QFont("Calibri", taille_police + n))
+        self.ui.tabCreneaux.setFont(QtGui.QFont("Calibri", taille_police + n))
         for val in MyWindow.dictResumeVen.values():
-            val.setFont(QtGui.QFont("Calibri", taille_police+1))
+            val.setFont(QtGui.QFont("Calibri", taille_police + n))
         for val in MyWindow.dictResumeSam.values():
-            val.setFont(QtGui.QFont("Calibri", taille_police+1))
-        self.ui.creneauVendredi.resizeRowsToContents()
-        self.ui.creneauSamedi.resizeRowsToContents()
-        self.ui.tabBenevoles.resizeRowsToContents()
-        self.ui.tabCreneaux.resizeRowsToContents()
-
-    def dezoom(self):
-        taille_police = self.ui.creneauVendredi.fontInfo().pointSize()
-        self.ui.creneauVendredi.setFont(QtGui.QFont("Calibri", taille_police-1))
-        self.ui.creneauSamedi.setFont(QtGui.QFont("Calibri", taille_police-1))
-        self.ui.tabBenevoles.setFont(QtGui.QFont("Calibri", taille_police-1))
-        self.ui.tabCreneaux.setFont(QtGui.QFont("Calibri", taille_police-1))
-        self.ui.listCatCre.setFont(QtGui.QFont("Calibri", taille_police-1))
-        self.ui.listHoraire.setFont(QtGui.QFont("Calibri", taille_police-1))
-        for val in MyWindow.dictResumeVen.values():
-            val.setFont(QtGui.QFont("Calibri", taille_police-1))
-        for val in MyWindow.dictResumeSam.values():
-            val.setFont(QtGui.QFont("Calibri", taille_police-1))
-        self.ui.creneauVendredi.resizeRowsToContents()
-        self.ui.creneauSamedi.resizeRowsToContents()
-        self.ui.tabBenevoles.resizeRowsToContents()
-        self.ui.tabCreneaux.resizeRowsToContents()
-
-    def reset_police(self):
-        self.ui.creneauVendredi.setFont(QtGui.QFont("Calibri", DEFAULT_POLICE_SIZE))
-        self.ui.creneauSamedi.setFont(QtGui.QFont("Calibri", DEFAULT_POLICE_SIZE))
-        self.ui.tabBenevoles.setFont(QtGui.QFont("Calibri", DEFAULT_POLICE_SIZE))
-        self.ui.tabCreneaux.setFont(QtGui.QFont("Calibri", DEFAULT_POLICE_SIZE))
-        self.ui.listCatCre.setFont(QtGui.QFont("Calibri", DEFAULT_POLICE_SIZE))
-        self.ui.listHoraire.setFont(QtGui.QFont("Calibri", DEFAULT_POLICE_SIZE))
-        for val in MyWindow.dictResumeVen.values():
-            val.setFont(QtGui.QFont("Calibri", DEFAULT_POLICE_SIZE))
-        for val in MyWindow.dictResumeSam.values():
-            val.setFont(QtGui.QFont("Calibri", DEFAULT_POLICE_SIZE))
+            val.setFont(QtGui.QFont("Calibri", taille_police + n))
         self.ui.creneauVendredi.resizeRowsToContents()
         self.ui.creneauSamedi.resizeRowsToContents()
         self.ui.tabBenevoles.resizeRowsToContents()
@@ -771,8 +721,6 @@ class MyWindow(QtWidgets.QMainWindow):
                 if search not in artiste:
                     self.ui.tabBenevoles.setRowHidden(i, True)
 
-
-
     def recherche_creneaux(self):
         li = self.ui.tabCreneaux.rowCount()
         search = self.ui.rechercheCreneaux.text().title()
@@ -788,8 +736,6 @@ class MyWindow(QtWidgets.QMainWindow):
                 cat = self.ui.tabCreneaux.item(i,3).text()
                 if search not in cat:
                     self.ui.tabCreneaux.setRowHidden(i, True)
-
-
 
     def recherche_stop(self):
         """
@@ -844,19 +790,34 @@ class MyWindow(QtWidgets.QMainWindow):
             self.ui.tabCreneaux.currentCellChanged[int, int, int, int].connect(self.supprimer_combobox_tabCreneaux)
             self.ui.tabCreneaux.currentCellChanged[int, int, int, int].connect(loop.exit)
             loop.exec_()
-
-    def supprimer_combobox_tabCreneaux(self,row, column, previousRow, previousColumn):
-        MyWindow.ETAT_SVG = False
-        self.ui.tabCreneaux.removeCellWidget(previousRow,previousColumn)
+            
+    def set_valeur_combobox_resume(self, index):
+        self.ui.tabBenevoles.blockSignals(True)
+        tab_resume = [self.ui.ResumeBenevoleV, self.ui.ResumeBenevoleS]
+        onglet = self.ui.tabWidget.currentIndex()
+        tab = tab_resume[onglet]
+        column = tab.currentColumn()
+        set_valeur_combobox(index, tab)
+        cle = Benevoles.attribut[column + 1]
+        if onglet == 1 and column == 3:
+            cle = Benevoles.attribut[column + 2]
+        label_resume = [self.ui.NbCBeneV,self.ui.NbCBeneS]
+        label_resume = label_resume[onglet]
+        nom_benevole = label_resume.text().split(" : ")[0]
+        for benevole in Benevoles.listBenevoles:
+            if benevole.nom == nom_benevole:
+                #permet d'appeler l'attribut modifie, celui ci est reférencé dans un objet dict pour chaque creneau
+                benevole.__dict__[cle] = index
+                Benevoles.remplir_tab_benevoles(self.ui.tabBenevoles,MyWindow.quantiteCreneau)
+                break
+        self.ui.tabBenevoles.blockSignals(False)
 
     def set_valeur_combobox_tabCreneaux(self, index):
-        MyWindow.ETAT_SVG = False
-        item = M.item_normal(index)
-        column = self.ui.tabCreneaux.currentColumn()
-        row = self.ui.tabCreneaux.currentRow()
-        self.ui.tabCreneaux.removeCellWidget(row,column)
-        self.ui.tabCreneaux.setItem(row,column,item)
+        set_valeur_combobox(index, self.ui.tabCreneaux)
 
+    def set_valeur_combobox_tabBenevoles(self, index):
+        set_valeur_combobox(index, self.ui.tabBenevoles)
+        
     def modif_cellule_tabCreneaux(self):
         """
         Lorsque l'utilisateur modifie directement une cellule du tableau Creneaux, cette fonction est executee
@@ -914,16 +875,16 @@ class MyWindow(QtWidgets.QMainWindow):
             loop.exec_()
 
     def supprimer_combobox_tabBenevoles(self,row, column, previousRow, previousColumn):
-        MyWindow.ETAT_SVG = False
-        self.ui.tabBenevoles.removeCellWidget(previousRow,previousColumn)
+        supprimer_combobox(self.ui.tabBenevoles, previousRow, previousColumn)
+        
+    def supprimer_combobox_tabCreneaux(self,row, column, previousRow, previousColumn):
+        supprimer_combobox(self.ui.tabCreneaux, previousRow, previousColumn)
 
-    def set_valeur_combobox_tabBenevoles(self, index):
-        MyWindow.ETAT_SVG = False
-        item = M.item_normal(index)
-        column = self.ui.tabBenevoles.currentColumn()
-        row = self.ui.tabBenevoles.currentRow()
-        self.ui.tabBenevoles.removeCellWidget(row,column)
-        self.ui.tabBenevoles.setItem(row,column,item)
+    def supprimer_combobox_resume(self,row, column, previousRow, previousColumn):
+        tab_resume = [self.ui.ResumeBenevoleV, self.ui.ResumeBenevoleS]
+        onglet = self.ui.tabWidget.currentIndex()
+        tab = tab_resume[onglet]
+        supprimer_combobox(tab, previousRow, previousColumn)        
 
     def modif_cellule_tabBenevoles(self):
         """
